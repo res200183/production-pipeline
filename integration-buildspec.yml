@@ -1,0 +1,7 @@
+version: 0.2
+
+phases:
+  build:
+    commands:
+      - echo "Running integration test..."
+      - curl -f http://54.83.239.93:5000/health
