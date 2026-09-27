@@ -1,7 +1,12 @@
+
 version: 0.2
 
 phases:
   build:
     commands:
-      - echo "Running integration test..."
-      - curl -f http://54.83.239.93:5000/health
+      - echo "Running integration test against DEV..."
+      - curl -f http://98.92.200.222:5000/health
+
+  post_build:
+    commands:
+      - echo "Integration test completed successfully"
