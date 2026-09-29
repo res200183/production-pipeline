@@ -5,7 +5,7 @@ phases:
   build:
     commands:
       - echo "Running integration test against DEV..."
-      - curl -f http://98.92.200.222:5000/health
+      - curl -f http://3.239.122.41:5000/health
 
   post_build:
     commands:
